@@ -20,4 +20,3 @@ def binary(data, target):
         else :
             start = data[mid] + 1
     return None
-
