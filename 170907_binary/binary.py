@@ -4,19 +4,18 @@
 # In[3]:
 
 
-def binary(data, target):
+def binary_search(data, target):
     start = 0
     end = len(data) - 1
     
-    print('data : ', data)
-    print('target : ', target)
+  
     
-    while start >= end:
+    while start <= end:
         mid = (start + end) // 2
         if target == data[mid]:
             return mid
         elif target < data[mid] :
-            end = data[mid] - 1
+            end = mid - 1
         else :
-            start = data[mid] + 1
+            start = mid + 1
     return None
