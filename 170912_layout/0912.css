@@ -1,0 +1,88 @@
+@charset "utf-8";
+body {
+  background: #555;
+  position: relative;
+  margin: 0;
+}
+
+.container {
+  background: #bbb;
+  min-height: 200vh;
+  width: 1000px;
+  margin: auto;
+}
+
+.header {
+  background: yellow;
+  min-height: 200px;
+}
+
+.logo {
+  border: 10px solid blue;
+  font-size: 2.0rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: inline-block;
+  margin: 0;
+}
+
+.main-content {
+  background: green;
+}
+
+.main-content::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.main-content div {
+  float: left;
+}
+
+.news, .rank, .personel {
+  width: 300px;
+  height: 300px;
+  margin: 10px;
+}
+
+.main-content .news {
+  background: aqua;
+  float: right;
+}
+
+.rank {
+  background: olive;
+}
+
+.personel {
+  background: violet;
+  float: right;
+}
+
+.footer {
+  background: red;
+  position: relative;
+}
+
+.info-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.info-list li {
+  border: 1px solid black;
+}
+
+.info-1 {
+  position: absolute;
+  top: 90px;
+  display: inline-block;
+}
+
+.info-3 {
+  position: relative;
+  top: 90px;
+}
