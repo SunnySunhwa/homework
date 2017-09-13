@@ -1,0 +1,86 @@
+@charset "utf-8";
+@import url("./normalize.css");
+@import url("./reset.css");
+body {
+  background-color: white;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+a:hover, a:focus {
+  color: #f00;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+.ally-hidden {
+  background-color: red;
+  position: absolute;
+  left: -9999em;
+}
+
+.wrapper {
+  background-color: white;
+  height: 100vh;
+  margin: auto;
+  width: 90%;
+}
+
+.navigation {
+  background: yellow;
+  position: relative;
+  border-bottom: 1px solid #333;
+  height: 40px;
+}
+
+.main-menu {
+  display: flex;
+  justify-content: space-around;
+}
+
+.main-menu span {
+  display: block;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.main-menu span:hover, .main-menu span:focus {
+  color: blue;
+}
+
+.sub-menu {
+  position: absolute;
+  top: 40px;
+  white-space: nowrap;
+}
+
+.sub-menu li, .sub-menu a {
+  display: inline-block;
+}
+
+.sub-menu a {
+  padding: 20px 10px;
+  font-size: .85rem;
+}
+
+.menu1 {
+  display: none;
+}
+
+.menu2 {
+  display: none;
+}
+
+.menu3 {
+  display: none;
+  right: 0;
+}
+
+.sub-menu-active {
+  display: block !important;
+}
