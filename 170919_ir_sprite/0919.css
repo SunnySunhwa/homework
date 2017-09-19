@@ -1,0 +1,47 @@
+@charset "utf-8";
+@import url("./reset.css");
+.wrapper {
+  margin: auto;
+  width: 400px;
+  height: 400px;
+  background-color: #eee;
+  position: relative;
+}
+
+h2 {
+  width: 350px;
+  height: 360px;
+  margin: auto;
+  background: #eee url("img/sprite.png") no-repeat;
+  background-position: -18px 10px;
+  text-indent: -999px;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.btn {
+  box-sizing: border-box;
+  background: aqua;
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  height: 18px;
+}
+
+button {
+  border: none;
+}
+
+.btn-prev,
+.btn-next {
+  width: 18px;
+  height: 100%;
+  overflow: hidden;
+  padding: 18px 0 0 0;
+  background: url("img/sprite.png") no-repeat;
+}
+
+.btn-next {
+  margin-left: 8px;
+  background-position-y: -18px;
+}
